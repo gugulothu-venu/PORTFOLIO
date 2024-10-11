@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venu Nayak's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #74d722;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: linear-gradient(to right, #2c5033, #3498db);
+            color: rgb(29, 11, 127);
+            padding: 40px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(34, 16, 29, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(11, 11, 11);
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 8px 16px;
+            transition: background-color 0.3s ease-in-out, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #242525;
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: white;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .profile-image {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venu Nayak</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="profile-image">
+            <img src="https://res.cloudinary.com/dmydrqs2m/image/upload/v1728287567/my_no1_th1bws.jpg" alt="Venu Nayak's Profile Image">
+        </div>
+        <p>Hello, I'm Gugulothu Venu Nayak, a passionate Bachelor's B-tech candidate in Computer Science and Engineering at IIT Indore. With a strong background in web development, I have honed my skills in creating dynamic and visually appealing online experiences. Proficient in DSA @ C++, I am adept at leveraging its power for efficient and scalable solutions. I am passionate about leveraging technology to solve complex problems and create innovative solutions.</p>
+        <p>I completed my 10th standard at Siddhartha High School Narsampet, and I completed my intermediate studies at Narayana College in Hyderabad.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>This project is utilizing HTML, CSS, and JavaScript to create an interactive and visually appealing website.And few others</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I am good at C++, DSA, and web development programs.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me to 9390302941 or connect with me on Instagram: <a href="https://www.instagram.com/venu_gugulothu_08?igsh=MXdwZDd0NTE4OG92ag==" target="_blank">Venu Gugulothu</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venu Nayak. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.scrollY + window.innerHeight;
+            sections.forEach(section => {
+                if (section.offsetTop < scrollPos - 50) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
